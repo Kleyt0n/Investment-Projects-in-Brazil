@@ -1,10 +1,10 @@
 # Investment Projects in Brazil
 
-this project was developed with inspiration in the course of the [*Datacamp Report with R Markdown*](https://datacamp.com/courses/reporting-with-rmarkdown).
+This project was developed with inspiration in the course of the [*Datacamp Report with R Markdown*](https://datacamp.com/courses/reporting-with-rmarkdown).
 
 # Datasets used
 
-Source: available by the World Bank
+### Source: available by the World Bank
 
 1. Annual Investment
 2. Investment in Services
