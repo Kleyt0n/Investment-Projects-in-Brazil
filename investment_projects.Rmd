@@ -3,6 +3,7 @@ title: "Investment Report for Projects in `r params$country`"
 author: "Kleyton da Costa"
 output: 
   html_document:
+    keep_md: true
     css: "styles.css"
     toc: true
     toc_float: true
