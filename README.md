@@ -1,6 +1,6 @@
 # Investment Projects in Brazil
 
-This project was developed with inspiration in the course of the [*Datacamp Report with R Markdown*](https://datacamp.com/courses/reporting-with-rmarkdown).
+This project was developed with inspiration in the course of the Datacamp - [*Report with R Markdown*](https://datacamp.com/courses/reporting-with-rmarkdown).
 
 # Datasets used
 
