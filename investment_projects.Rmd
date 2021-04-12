@@ -84,6 +84,7 @@ ggplot(country_investment_projects, aes(x = date_disclosed, y = total_investment
 ```
 
 ## Investment Projects in `r params$country` in `r params$fy`
+
 The `investment_services_projects` dataset was filtered below to focus on information about each investment project from the `r params$fy` fiscal year, and is referred to as `country_annual_investment_projects`. Projects that do not have an associated investment amount are excluded from the plot.
 
 ```{r country-annual-investment-projects,out.width='70%', warning=FALSE}
@@ -104,5 +105,22 @@ ggplot(country_annual_investment_projects, aes(x = date_disclosed, y = total_inv
         legend.background = element_rect(fill = "#F5F5F5"))
 ```
 
+## Investment Projects in `r params$country` by Sector
 
+```{r country-annual-investment-sector,out.width='70%', warning=FALSE}
+country_annual_investment_sector <- investment_services_projects %>%
+  filter(country == params$country,
+         date_disclosed >= params$year_start,
+         date_disclosed <= params$year_end) 
 
+ggplot(country_annual_investment_sector, aes(x = date_disclosed, y = total_investment, color = sector)) +
+  geom_point() +
+  labs(
+    title = "",
+    x = "Date Disclosed",
+    y = "Total IFC Investment in Dollars in Millions"
+  ) +
+  theme_fivethirtyeight()+
+  theme(plot.background = element_rect(fill = "#F5F5F5"),
+        legend.background = element_rect(fill = "#F5F5F5"))
+```
